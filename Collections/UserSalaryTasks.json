@@ -1,0 +1,17 @@
+{
+  "modelName": "User",
+  "attributes": [
+    "firstName",
+    "lastName",
+    "age",
+    "gender",
+    {
+      "relationName": "MySalary",
+      "attributes": ["baseSalary", "timesheetSalary"]
+    },
+    {
+      "relationName": "MyTasks",
+      "attributes": ["name", "points"]
+    }
+  ]
+}

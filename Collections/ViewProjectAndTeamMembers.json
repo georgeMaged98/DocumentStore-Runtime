@@ -1,0 +1,22 @@
+{
+  "modelName": "Project",
+  "attributes": [
+    "name",
+    "type",
+    {
+      "relationName": "Owner",
+      "attributes": ["firstName", "lastName", "gender"]
+    },
+    {
+      "relationName": "TeamMembers",
+      "attributes": [
+        "firstName",
+        "lastName",
+        {
+          "relationName": "MySalary",
+          "attributes": ["baseSalary", "timesheetSalary"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "modelName": "Task",
+  "attributes": [
+    "points",
+    "type",
+    "name",
+    {
+      "relationName": "Timesheets",
+      "attributes": [
+        "hrs",
+        "description",
+        {
+          "relationName": "Reviewer",
+          "attributes": ["firstName", "lastName", "gender"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "documentstore-runtime",
+  "version": "1.0.0",
+  "description": "Responsible for the read operation of the document store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgeMaged98/DocumentStore-Runtime.git"
+  },
+  "author": "George Maged",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgeMaged98/DocumentStore-Runtime/issues"
+  },
+  "homepage": "https://github.com/georgeMaged98/DocumentStore-Runtime#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "mongoose": "^5.13.5"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "models": {
+    "Project": {
+      "name": {
+        "type": "text"
+      },
+      "type": {
+        "type": "text"
+      },
+      "Owner": {
+        "type": "ONE",
+        "model": "User"
+      },
+      "TeamMembers": {
+        "type": "MANY",
+        "model": "User"
+      }
+    },
+    "User": {
+      "firstName": {
+        "type": "text"
+      },
+      "lastName": {
+        "type": "text"
+      },
+      "gender": {
+        "type": "text"
+      },
+      "age": {
+        "type": "numeric"
+      },
+      "MySalary": {
+        "type": "ONE",
+        "model": "Wallet"
+      },
+      "MyTasks": {
+        "type": "MANY",
+        "model": "Task"
+      }
+    },
+    "Wallet": {
+      "baseSalary": {
+        "type": "numeric"
+      },
+      "timesheetSalary": {
+        "type": "numeric"
+      }
+    },
+    "Task": {
+      "name": {
+        "type": "text"
+      },
+      "type": {
+        "type": "text"
+      },
+      "points": {
+        "type": "numeric"
+      },
+      "Timesheets": {
+        "type": "MANY",
+        "model": "Timesheet"
+      },
+      "startDate": {
+        "type": "date"
+      },
+      "endDate": {
+        "type": "date"
+      }
+    },
+    "Timesheet": {
+      "hrs": {
+        "type": "numeric"
+      },
+      "description": {
+        "type": "text"
+      },
+      "Reviewer": {
+        "type": "ONE",
+        "model": "User"
+      }
+    }
+  },
+  "options": {
+    "alter": true,
+    "force": true
+  }
+}
